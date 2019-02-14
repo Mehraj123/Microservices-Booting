@@ -1,19 +1,23 @@
 package com.student.model;
 
-import java.io.Serializable;
-
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import java.io.Serializable;
+
 @Getter
 @Setter
-@AllArgsConstructor
+@Entity
 public class Student implements Serializable {
 
   private static final long serialVersionUID = 1L;
 
-  private Integer rollNo;
+  @Id
+  @GeneratedValue
+  private Long rollNo;
   private String name;
 
 }
