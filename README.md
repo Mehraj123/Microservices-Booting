@@ -2,8 +2,10 @@
 Microservices with SpringBoot
 
 ## Teachnology stack : 
-- Spring Boot
-- Java
+
+- Java 8
+- Spring Boot 2.X
+- Hibernate 5.X
 - Docker
 - Maven
 - Lombok
