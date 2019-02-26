@@ -6,7 +6,7 @@ Microservices with SpringBoot
 - Java 8
 - Spring Boot 2.X
 - Hibernate 5.X
-- Docker
+- Docker 18.X
 - Maven
 - Lombok
 
