@@ -14,7 +14,7 @@ Microservices with SpringBoot
  - docker-compose up --build
  
  
-## Extars:
+## Extras:
 ### docker-compose cheat sheet
 
 https://devhints.io/docker-compose
