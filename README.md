@@ -1,7 +1,7 @@
-# Microservices-Booting
+# Microservices-Booting:
 Microservices with SpringBoot
 
-## Teachnology stack : 
+## Teachnology stack: 
 
 - Java 8
 - Spring Boot 2.X
@@ -9,8 +9,12 @@ Microservices with SpringBoot
 - Docker 18.X
 - Maven
 - Lombok
+## Setup and build:
 
-
+ - docker-compose up --build
+ 
+ 
+# Extars:
 ## docker-compose cheat sheet
 
 https://devhints.io/docker-compose
