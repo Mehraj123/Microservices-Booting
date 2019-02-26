@@ -9,3 +9,8 @@ Microservices with SpringBoot
 - Docker
 - Maven
 - Lombok
+
+
+## docker-compose cheat sheet
+
+https://devhints.io/docker-compose

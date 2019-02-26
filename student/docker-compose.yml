@@ -13,9 +13,7 @@ services:
       - 3306:3306
 
   student_service:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    build: .
     container_name: student_ms
     image: student_image
     depends_on:
@@ -24,5 +22,15 @@ services:
       DATABASE_HOST: database
       DATABASE_USER: su
       DATABASE_PASSWORD: admin
+#    restart: always
+      entrypoint: /bin/sh
+    command: >
+      -c "
+      while ! (nc -z student_mysql 3306); do sleep 1; echo 'Waiting for database to up...'; done;
+      echo 'Database is up'
+      echo 'Starting Student Service...' &&
+      java -jar student.jar
+      "
+     
     ports:
       - 2018:2018
