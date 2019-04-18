@@ -31,6 +31,5 @@ services:
       echo 'Starting Student Service...' &&
       java -jar student.jar
       "
-     
     ports:
       - 2018:2018

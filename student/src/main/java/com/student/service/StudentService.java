@@ -1,27 +1,19 @@
 package com.student.service;
 
 import com.student.model.Student;
-import com.student.repository.StudentRepository;
 import com.student.request.StudentRequest;
-import lombok.AllArgsConstructor;
-import org.springframework.stereotype.Component;
 
 import java.util.List;
 
-@AllArgsConstructor
-@Component
-public class StudentService {
+public interface StudentService {
 
-    private StudentRepository studentRepository;
+    Student create(StudentRequest request);
 
-    public List<Student> findAllStudents() {
-        return studentRepository.findAll();
-    }
+    List<Student> findAll();
 
-    public Student createStudent(StudentRequest request) {
-        Student student = new Student();
-        student.setName(request.getName());
-        Student savedStudent = studentRepository.save(student);
-        return savedStudent;
-    }
+    Student findById(Long id);
+
+    Student update(StudentRequest request);
+
+    void delete(Long id);
 }
