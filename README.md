@@ -1,6 +1,10 @@
 # Microservices-Booting:
 Microservices with SpringBoot
 
+- student microservice
+- teahcer microservice
+- frontend microservice [Angular]
+
 ## Teachnology stack: 
 
 - Java 8
